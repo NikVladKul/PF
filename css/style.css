@@ -1,0 +1,44 @@
+.container{
+    text-align: center;
+}
+
+#yin-yang {
+    margin: 20px auto;
+    width: 96px;
+    height: 48px;
+    background: #eee;
+    border-color: rgb(43, 85, 115);
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 1s;
+}
+
+#yin-yang:hover {
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+
+#yin-yang:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #eee;
+    border: 18px solid rgb(43, 85, 115);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+#yin-yang:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgb(43, 85, 115);
+    border: 18px solid #eee;
+    border-radius:100%;
+    width: 12px;
+    height: 12px;
+}
